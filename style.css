@@ -723,6 +723,10 @@ form.search_form {
         width: 95%;
     }
 
+    .BusinessName {
+        font-size: 1.5em;
+    }
+
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -823,6 +827,10 @@ form.search_form {
 
     .contact-info .info-card {
         flex: 1 1 60%;
+    }
+
+    .show-room-txt {
+        width: 80%;
     }
 
     .footer {
