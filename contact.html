@@ -16,11 +16,23 @@
         <nav class="navbar">
             <!-- Logo Section -->
             <div class="nav-logo">
-                <img src="Assets/Images/logo.jpeg" alt="Awan Marbles Logo">
-                <h1 class="BusinessName">Awan Marble</h2>
+                <div class="logo_and_name">
+                    <img src="Assets/Images/logo.jpeg" alt="Awan Marbles Logo">
+                    <h1 class="BusinessName">Awan Marble</h1>
+
+                </div>
+
+                <div class="hamburger_btn">
+
+                    <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false"
+                        aria-label="Open navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
+
             <!-- Menu Section -->
-            <div class="nav-menu">
+            <div class="nav-menu" id="main-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About US</a></li>
@@ -30,9 +42,9 @@
                     <li class="cartMenu"><a href="#">Cart <i class="fa-solid fa-cart-arrow-down"></i></a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
+
 
 
     <!-- BANNER  SECTION -->
@@ -204,7 +216,55 @@
         </div>
 
     </section>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-box">
+            <h3>AWAN MARBLE &amp; <span class="accent">GRANITE</span></h3>
 
+            <p>Your trusted partner for premium natural stone solutions. Transforming spaces with exceptional quality
+                and craftsmanship since 1998.</p>
+
+            <div class="social" aria-label="Social links">
+                <a href="#" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="g" aria-label="Google"><i class="fab fa-google"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>OUR SERVICES</h3>
+            <ul>
+                <li>Custom Marble Fabrication</li>
+                <li>Granite Countertops</li>
+                <li>Quartz Installation</li>
+                <li>Stone Cutting &amp; Polishing</li>
+                <li>Kitchen Remodeling</li>
+                <li>Bathroom Renovation</li>
+                <li>Commercial Projects</li>
+            </ul>
+        </div>
+
+        <div class="footer-box address">
+            <h3>CONTACT INFO</h3>
+            <p>123 Stone Avenue<br>Industrial District<br>WZD PAK</p>
+            <p>+92 (555) 123-4567<br><a href="mailto:info@marbleandgranite.com">info@marbleandgranite.com</a></p>
+            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Closed</p>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        © 2025 Awan Marble &amp; Granite. All rights reserved.
+    </div>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 

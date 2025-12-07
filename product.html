@@ -17,23 +17,35 @@
         <nav class="navbar">
             <!-- Logo Section -->
             <div class="nav-logo">
-                <img src="Assets/Images/logo.jpeg" alt="Awan Marbles Logo">
-                <h1 class="BusinessName">Awan Marble</h2>
+                <div class="logo_and_name">
+                    <img src="Assets/Images/logo.jpeg" alt="Awan Marbles Logo">
+                    <h1 class="BusinessName">Awan Marble</h1>
+
+                </div>
+
+                <div class="hamburger_btn">
+
+                    <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false"
+                        aria-label="Open navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
+
             <!-- Menu Section -->
-            <div class="nav-menu">
+            <div class="nav-menu" id="main-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About US</a></li>
                     <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="product.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li class="cartMenu"><a href="#">Cart <i class="fa-solid fa-cart-arrow-down"></i></a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
+
 
 
     <!-- BANNER  SECTION -->
@@ -90,7 +102,8 @@
         <article class="product-card">
             <div class="card-media">
                 <div class="tag">Granite</div>
-                <img src="Assets/Images/Modern Modular Kitchen Interior Designs 2025 _ Smart & Stylish Ideas.jpeg" alt="">
+                <img src="Assets/Images/Modern Modular Kitchen Interior Designs 2025 _ Smart & Stylish Ideas.jpeg"
+                    alt="">
             </div>
 
             <div class="card-body">
@@ -198,6 +211,46 @@
 
     </main>
 
+    <!-- sample images -->
+    <div class="sample_images">
+        <h2>Sample Images</h2>
+        <div class="sample_image_container">
+            <div class="sample_image_card">
+                <img src="Assets/Images/China_Verona.jpeg" alt="sample Image 1">
+                <p class="sample_image_name">China Verona</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/booticine_cream.jpeg" alt="sample Image 1">
+                <p class="sample_image_name">Booticine Cream</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/Badal_Grey.jpeg" alt="sample Image 1">
+                <p class="sample_image_name"> Badal Grey</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/Tavera.jpeg" alt="sample Image 1">
+                <p class="sample_image_name"> Tavera</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/Ziarat_White.jpeg" alt="sample Image 1">
+                <p class="sample_image_name"> Ziarat White</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/Ziarat_Grey.jpeg" alt="sample Image 1">
+                <p class="sample_image_name"> Ziarat Grey</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/black_gold.jpeg" alt="sample Image 1">
+                <p class="sample_image_name"> Black & Gold</p>
+            </div>
+            <div class="sample_image_card">
+                <img src="Assets/Images/white_black.jpeg" alt="sample Image 1">
+                <p class="sample_image_name"> White & Black</p>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Help Section -->
     <section class="help-sec">
         <div class="help-txt">
@@ -213,41 +266,53 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-box">
-            <h3>Awan Marble & Granite</h3>
-            <p>Your trusted partner for quality natural stone solutions.</p>
+            <h3>AWAN MARBLE &amp; <span class="accent">GRANITE</span></h3>
 
-            <div class="social">
-                <span>Facebook</span>
-                <span>Instagram</span>
-                <span>Google</span>
+            <p>Your trusted partner for premium natural stone solutions. Transforming spaces with exceptional quality
+                and craftsmanship since 1998.</p>
+
+            <div class="social" aria-label="Social links">
+                <a href="#" class="fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="g" aria-label="Google"><i class="fab fa-google"></i></a>
             </div>
         </div>
 
         <div class="footer-box">
-            <h3>Our Services</h3>
+            <h3>OUR SERVICES</h3>
             <ul>
+                <li>Custom Marble Fabrication</li>
                 <li>Granite Countertops</li>
                 <li>Quartz Installation</li>
-                <li>Stone Cutting</li>
+                <li>Stone Cutting &amp; Polishing</li>
+                <li>Kitchen Remodeling</li>
                 <li>Bathroom Renovation</li>
+                <li>Commercial Projects</li>
             </ul>
         </div>
 
-        <div class="footer-box">
-            <h3>Contact Info</h3>
-            <p>123 Stone Avenue</p>
-            <p>Industrial District</p>
-            <p>+92 555 1234567</p>
-            <p>info@example.com</p>
+        <div class="footer-box address">
+            <h3>CONTACT INFO</h3>
+            <p>123 Stone Avenue<br>Industrial District<br>WZD PAK</p>
+            <p>+92 (555) 123-4567<br><a href="mailto:info@marbleandgranite.com">info@marbleandgranite.com</a></p>
+            <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Closed</p>
         </div>
     </footer>
 
     <div class="copyright">
-        © 2025 Awan Marble & Granite. All rights reserved.
+        © 2025 Awan Marble &amp; Granite. All rights reserved.
     </div>
 
+    <script>
+        const toggleBtn = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 
