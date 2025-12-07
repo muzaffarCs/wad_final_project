@@ -758,6 +758,14 @@ form.search_form {
         text-align: center;
     }
 
+    .banner-content p {
+        font-size: 1.2em;
+    }
+
+    .banner-content h1 {
+        font-size: 2em;
+    }
+
     li.cartMenu {
         width: auto;
         padding: 3px 0;
