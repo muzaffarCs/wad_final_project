@@ -11,7 +11,9 @@
     --bg-light: #FFFFFF;
     --nav-color: #E6E0D2;
     --btn-primary: #CCA341;
+    --btn-primary-hover: #b6923e;
     --btn-secondary: #000000;
+    --btn-light-hover: #ede8e8;
     --btn-muted: #f1eee9;
     --font-primary: #E6E0D2;
     --font-secondary: #BDA262;
@@ -80,8 +82,15 @@ li.cartMenu {
     width: 120px;
 }
 
+.cartMenu:hover {
+    transform: scale(1.05);
+}
+
 .nav-menu ul li a:hover {
     color: #FFFFFF;
+}
+.nav-menu ul li:hover {
+    transform: scale(1.05);
 }
 
 .nav-toggle {
@@ -182,6 +191,17 @@ form.search_form {
     color: var(--font-light)
 }
 
+button.pill.active:hover {
+    background: var(--btn-primary-hover);
+    transform: scale(1.05);
+}
+
+button.pill:hover {
+    background: var(--btn-secondary);
+    color: var(--font-light);
+    transform: scale(1.05);
+}
+
 
 /* main products */
 .products {
@@ -201,6 +221,10 @@ form.search_form {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+article.product-card:hover {
+    transform: scale(1.05);
 }
 
 .product-card .tag {
@@ -323,6 +347,9 @@ form.search_form {
     height: 30vh;
 }
 
+.sample_image_card:hover {
+    transform: scale(1.1);
+}
 
 /* help section */
 .help-sec {
@@ -363,6 +390,12 @@ form.search_form {
     border: none;
     border-radius: 8px;
     font-size: 1.2em;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.consult-btn:hover{
+    background: var(--btn-primary-hover);
+    transform: scale(1.1);
 }
 
 .work-btn {
@@ -371,6 +404,13 @@ form.search_form {
     border: 1px solid black;
     border-radius: 8px;
     font-size: 1.2em;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.work-btn:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
 }
 
 .help-sec>p {
@@ -442,6 +482,10 @@ form.search_form {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+}
+
+.footer .social :hover{
+    transform: scale(1.05);
 }
 
 .fb {
@@ -600,6 +644,10 @@ form.search_form {
     margin-top: 12px;
 }
 
+.quote-form .actions :hover{
+    background: var(--btn-primary-hover);
+}
+
 .btn.send-req {
     background: var(--btn-primary);
     color: var(--font-light);
@@ -674,6 +722,12 @@ form.search_form {
     display: inline-block;
 }
 
+.btn.outline.small:hover {
+    background: var(--btn-primary);
+    color: var(--font-light);
+    transform: scale(1.05);
+}
+
 .whts-btn {
     background: #1DAA61;
     color: var(--font-light);
@@ -681,6 +735,11 @@ form.search_form {
     padding: 8px 40px;
     border-radius: 8px;
     font-size: 1.2em;
+}
+
+.whts-btn:hover{
+    background: #075E54;
+    transform: scale(1.05);
 }
 
 .show-room-cards.two-col {
@@ -699,6 +758,13 @@ form.search_form {
     text-align: start;
 }
 
+.show-room-locatio-card.card:hover {
+    transform: scale(1.05);
+}
+
+.show-room-location.card.map-card:hover {
+    transform: scale(1.05);
+}
 .show-room-locatio-card .loc-icon {
     width: 56px;
     height: 56px;
