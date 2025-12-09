@@ -346,6 +346,7 @@ article.product-card:hover {
 .sample_image_card img {
     width: 20vw;
     height: 30vh;
+    border-radius: 12px;
 }
 
 .sample_image_card:hover {
