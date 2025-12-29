@@ -9,7 +9,7 @@ const Product = require("./models/Product.js");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors('*'));
 app.use(express.json());
 
 // Serve static frontend
@@ -61,7 +61,7 @@ app.delete("/api/products/:id", async (req, res) => {
 
 // Default page
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "./public/index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
