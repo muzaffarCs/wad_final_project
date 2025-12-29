@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 
-const Product = require("./models/Product");
+const Product = require("./models/Product.js");
 
 const app = express();
 
@@ -61,7 +61,7 @@ app.delete("/api/products/:id", async (req, res) => {
 
 // Default page
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "Public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
