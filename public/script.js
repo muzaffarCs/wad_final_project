@@ -129,3 +129,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+const API_URL = "/api/products";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("productContainer");
+  if (!container) return;
+
+  fetch(API_URL)
+    .then(res => res.json())
+    .then(products => {
+      container.innerHTML = products.map(p => `
+        <article class="product-card">
+          <div class="card-media">
+            <div class="tag">${p.category}</div>
+            <img src="${p.image}" alt="${p.name}">
+          </div>
+
+          <div class="card-body">
+            <h3>${p.name}</h3>
+            <p>${p.description}</p>
+
+            <div class="features">
+              ${p.features.map(f => `<span>${f}</span>`).join("")}
+            </div>
+
+            <div class="detail-price">
+              <button class="view-btn">View Detail</button>
+              <p class="price">From Rs. ${p.price}/sq ft</p>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    })
+    .catch(err => {
+      container.innerHTML = "<p>Failed to load products</p>";
+      console.error(err);
+    });
+});
+
